@@ -65,7 +65,7 @@ public class CStringTestSuite {
   public void sortDescendingOrdersCharacters() {
     CString s = new CString("zebra");
     s.sortDescending();
-    assertCStringEquals("zrbea", s);
+    assertCStringEquals("zreba", s);
   }
 
   // Ensures descending sort handles repeated characters correctly.
@@ -178,7 +178,7 @@ public class CStringTestSuite {
   @Test
   public void maxMirrorCStringOverload() {
     CString s = new CString("abccba");
-    assertEquals(3, CStringUtil.maxMirror(s));
+    assertEquals(6, CStringUtil.maxMirror(s));
   }
 
   // Verifies the overloaded maxMirror for other CString inputs.
